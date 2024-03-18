@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+/*body div indexpage */
+body{
+    background: #ddf797;
+    color: #0c0909;
+}
+/*right side name css*/
+.logo{
+    font-size: 32px;
+    font-weight: 700;
+    color: #130d0d;
+    text-decoration: none;
+}
+.container .logo::first-letter{
+    color: #ff004f;
+}
+/*html page body container padding */
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex; /*logo and link display side by side */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* set items are force onto line or can wrap onto multiple lines */
+}
+nav ul li{
+    display: inline-block;
+    list-style: none; 
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #0e0d0d;
+    text-decoration: none;/* remove the underline for links */
+    font-size: 18px;
+    position: relative;
+}
+/* visible lines  click on tab nav */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;/* effecct for 0.5 sec */
+}
+/*display only click link */
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* index page text align in center*/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.header-text h2{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h2 span{
+    color: #ff004f;
+}
+footer{
+    margin-top: 14%;
+    text-align: center;
+    padding: 5px;
+    background-color: antiquewhite;
+    color: #080808;
+}
+/*---------about--------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.imgr{
+    height: 400px;
+    width: 130%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%; /*width of the column */
+}
+.about-col-1 img{
+    width:100%;
+    border-radius:15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 55px;
+    font-weight: 550;
+    color: #161414;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight: 500;
+    cursor:pointer; /* diplayed to the user */
+ position:relative;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s; 
+}
+.services-list div i{
+    font-size: 40px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color:#0f0f0f;
+    font-size :12px;
+    margin-top:20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px); /* upside throw this box */
+}
+.font{
+    color: #080808;
+}
+
+/* -----------------contact----------*/
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size:25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#fa5e5e;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);/*up side effect*/
+}
+/* .btn.btn2{
+    border-radius: 6px;
+    margin-top: 30px;
+    background: #ff004f;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    height: 30px;
+    width: 120px;
+} */
+.contact-right form{
+    width:100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #9df0aa;
+    padding:15px;
+    margin:15px 0;
+    color:#131212;
+    font-size:18px;
+    border-radius: 6px;
+}
+#contact{
+    padding:45px 0;
+}
+form .btn3{
+    background: #3af077;
+    padding: 14px 60px;
+    font-size:18px;
+    margin-top: 20px;
+    cursor:pointer;
+}
